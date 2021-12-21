@@ -14,11 +14,11 @@ def main():
         create_all_entities()
 
         local_session.commit()
-        # local_session.add(UserRole(role_name='Administrator'))
-        # local_session.add(UserRole(role_name='Customer'))
-        # local_session.add(UserRole(role_name='AirCompany'))
-        #
-        # local_session.commit()
+        local_session.add(UserRole(role_name='Administrator'))
+        local_session.add(UserRole(role_name='Customer'))
+        local_session.add(UserRole(role_name='AirCompany'))
+        
+        local_session.commit()
 
     except Exception as e:
         print(f'Error! : {str(e)}')
